@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Home - Austar Motors</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Austar Motors</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Financing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-12">
+
+
+        <img id="big_pic" class="col" src="desc/civic_2012/IMG_20190119_085552.jpg" alt="First slide">
+      
+         
+
+        <div id="sm_image" class="row">
+
+          <div class="col-lg-4 col-md-6 mb-4 templ">
+            <div class="card h-100">
+              <img class="card-img-top" src="desc/civic_2012/IMG_20190119_085552.jpg" alt="">
+              <div class="Reduced"></div>
+              
+            </div>
+          </div>
+          
+        <!--   <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="desc/civic_2012/IMG_20190119_085600.jpg" alt="">
+              <div class="Reduced"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="desc/civic_2012/IMG_20180824_105213.jpg" alt="">
+              <div class="Reduced"></div>
+              
+ -->
+            </div>
+          </div>
+          
+          
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <script type="text/javascript">
+    
+    // $(document).ready(function(){
+    //   console.log('ready!');
+
+    //   findImages();
+    // });
+
+    // var xhr = new XMLHttpRequest();
+    // xhr.open("GET", "/desc/civic_2012/", true);
+    // xhr.responseType = 'document';
+    // xhr.onload = () => {
+    //   if (xhr.status === 200) {
+    //     var elements = xhr.response.getElementsByTagName("a");
+    //     for (x of elements) {
+    //       if ( x.href.match(/\.(jpe?g|png|gif)$/) ) { 
+    //           let img = document.createElement("img");
+    //           newElem = $(".temp").clone();
+    //           newElem.find('img').attr("src", x.href);
+    //           newElem.appendTo( "#sm_image" );
+
+    //           //img.src = x.href;
+    //           //document.body.appendChild(img);
+    //       } 
+    //     };
+    //   } 
+    //   else {
+    //     alert('Request failed. Returned status of ' + xhr.status);
+    //   }
+    // }
+    // xhr.send()
+
+    // var folder = "images/";
+    // var folder = "desc/civic_2012/";
+    // var ajax=new XMLHttpRequest()
+    // ajax.open("GET",folder,true)
+    // ajax.onload=function () {
+    //     ajax.responseType="document"
+    //     var elements=ajax.responseText.getElementsByTagname("A")
+    //     for(x of elements){
+    //         if(request.status[0]==2 && x.href.match(/\.(jpe?g|png|gif)$/)) { 
+    //             let img=document.createElement("IMG")
+    //             // img.src=folder+x.href
+    //             // document.body.appendChild(img);
+    //             newElem = $(".temp").clone();
+    //           newElem.find('img').attr("src", x.href);
+    //           newElem.appendTo( "#sm_image" );
+    //         } 
+    //     };
+    // }
+    // ajax.send()
+
+    var dir = "desc/civic_2012/";
+var fileextension = ".png";
+$.ajax({
+    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+    url: dir,
+    success: function (data) {
+        //List all .png file names in the page
+        $(data).find("a:contains(" + fileextension + ")").each(function () {
+            var filename = this.href.replace(window.location.host, "").replace("http://", "");
+            // $("body").append("<img src='" + dir + filename + "'>");
+            newElem = $(".templ").clone();
+              newElem.find('img').attr("src", dir + filename);
+              newElem.appendTo( "#sm_image" );
+        });
+    }
+});
+
+  </script>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Austar Motors 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+
+</body>
+
+</html>
