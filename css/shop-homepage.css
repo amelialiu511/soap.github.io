@@ -6,3 +6,36 @@
 body {
   padding-top: 56px;
 }
+
+.Reduced {
+    background: url(reduced-ribbon.png) left top no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 93px;
+    width: 93px;
+    z-index: 976;
+}
+
+.Sold {
+    background: url(images/common/sold-ribbon.png) left top no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 93px;
+    width: 93px;
+    z-index: 976;
+}
+
+.Used {
+    background: url(images/common/used-ribbon.png) left top no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 93px;
+    width: 93px;
+    z-index: 976;
+}
