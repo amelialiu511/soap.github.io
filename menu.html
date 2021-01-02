@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Menu - Steamy Piggy</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="jquery.url.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+   <script src = "action.js" type = "text/javascript" >
+    </script>
+
+</head>
+
+<body>
+ <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Steamy Piggy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Visit</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="menu.html">Menu
+              <span class="sr-only">(Current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://steamypiggy.us17.list-manage.com/subscribe?u=3b3d6753bfb238127b4138fee&id=1b7bfbecc4">Newsletter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="os.html">Our Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ot.html">Our Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Page Content -->
+<div class="container" >
+      <br>
+
+      <!-- smaller image with description -->
+      <div id="cardlist_id" class="row cardlists">
+
+  </div>
+  <!-- /.row -->
+</div>
+
+<!-- Footer -->
+<br><br>
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Steamy Piggy 2020</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+<script type="text/javascript">
+
+   // populate car images
+$( document ).ready(function() {
+       console.log( "ready!" );
+
+createCard(
+  "Soup Dumpling",
+  "Soup-dumpling",  // image folder
+  "$10.5", //price
+  "handmade steamed dumplings filled with pork & chicken broth (7)"); // mileage
+
+  createCard(
+    "BBQ Pork Baozi",
+    "BBQ-pork-baozi",  // image folder
+    "$5.5", //price
+    "stuffed fluffy buns filled with Chinese-style BBQ pork (2)"); // mileage
+
+    createCard(
+      "Shrimp Dumplings",
+      "shrimp-dumplings",  // image folder
+      "$9", //price
+      "steamed (6) *gluten-free"); // mileage
+
+      createCard(
+        "Potstickers",
+        "potstickers",  // image folder
+        "$9", //price
+        "handmade & pan-fried, pork & chive (7)"); // mileage
+
+        createCard(
+          "Boiled Dumplings",
+          "boiled-dumpling",  // image folder
+          "$9", //price
+          "handmade & boiled, pork & chive (8)"); // mileage
+
+          createCard(
+            "Salt N' Pepper Wings",
+            "salt-and-pepper-wings",  // image folder
+            "$11.5", //price
+            "wok-fried with a kick (8) *mild spicy"); // mileage
+
+            createCard(
+              "Kawaii Buns",
+              "kawaii-buns",  // image folder
+              "$8", //price
+              "custard-filled steamed buns (4)"); // mileage
+
+              createCard(
+                "Sesame Balls",
+                "sesame-balls",  // image folder
+                "$6", //price
+                "deep-fried, filled with red bean (6)"); // mileage
+});
+
+
+</script>
+</body>
+</html>
